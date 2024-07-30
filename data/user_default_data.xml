@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="user_default_data_student" model="res.users">
+            <field name="name">student</field>
+            <field name="login">student</field>
+            <field name="email">student@gmail.com</field>
+        </record>
+
+        <record id="user_default_teacher-data" model="res.users">
+            <field name="name">teacher</field>
+            <field name="login">teacher</field>
+            <field name="email">teacher@gmail.com</field>
+        </record>
+
+        <record id="user_default_general_manager" model="res.users">
+            <field name="name">General Manager</field>
+            <field name="login">manager</field>
+            <field name="email">manager@gmail.com</field>
+        </record>
+
+        <record id="user_default_executive_manager_data" model="res.users">
+            <field name="name">Executive Manager </field>
+            <field name="login">emanager</field>
+            <field name="email">emanager@gmail.com</field>
+        </record>
+
+         <record id="user_default_developer_user_data" model="res.users">
+            <field name="name">Nasrat</field>
+            <field name="login">Nasrat</field>
+            <field name="email">nasrat@gmail.com</field>
+        </record>
+
+        <record id="user_default_financial_manager_user_data" model="res.users">
+            <field name="name">Financial Manager</field>
+            <field name="login">fmanager</field>
+            <field name="email">fmanager@gmail.com</field>
+        </record>
+    </data>
+</odoo>

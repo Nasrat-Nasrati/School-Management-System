@@ -1,0 +1,76 @@
+<odoo>
+    <record id="student_attendance_view_form" model="ir.ui.view">
+        <field name="name">school.student.attendance.form</field>
+        <field name="model">school.attendance</field>
+        <field name="arch" type="xml">
+            <form string="student attendance">
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="student_id"/>
+                            <field name="class_id"/>
+                        </group>
+
+                        <group>
+                            <field name="date"/>
+                            <field name="status"/>
+                        </group>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+
+                <!-- WhatsApp Link -->
+                <div class="oe_whatsapp_link">
+                    <a href="https://wa.me/93770694437" target="_blank" class="btn btn-primary">
+                        <i class="fa fa-whatsapp"/>
+                        WhatsApp
+                    </a>
+                </div>
+
+            </form>
+        </field>
+    </record>
+
+
+    <record id="student_attendance_tree_form" model="ir.ui.view">
+        <field name="name">student.attendance.tree.view</field>
+        <field name="model">school.attendance</field>
+        <field name="arch" type="xml">
+            <tree string="Student Attendance">
+                <field name="id"/>
+                <field name="student_id"/>
+                <field name="class_id"/>
+                <field name="date"/>
+                <field name="status"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="student_attendance_search_form" model="ir.ui.view">
+        <field name="name">student.attendance.search.view</field>
+        <field name="model">school.attendance</field>
+        <field name="arch" type="xml">
+            <search string="Student Attendance">
+                <field name="id"/>
+                <field name="student_id"/>
+                <field name="class_id"/>
+                <field name="date"/>
+                <field name="status"/>
+                <!-- Default group by grade -->
+                <group expand="0" string="attendance">
+                    <filter name="group_by_class" string="Class" context="{'group_by': 'class_id'}"/>
+                    <filter name="group_by_date" string="Date" context="{'group_by': 'date'}"/>
+                    <filter name="group_by_status" string="State" context="{'group_by': 'status'}"/>
+                    <filter name="group_by_student" string="Student" context="{'group_by': 'student_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+
+</odoo>

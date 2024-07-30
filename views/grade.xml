@@ -1,0 +1,70 @@
+<odoo>
+    <record id="student_grade_view_form" model="ir.ui.view">
+        <field name="name">Student Grade</field>
+        <field name="model">school.grade</field>
+        <field name="arch" type="xml">
+            <form string="Grade">
+
+                <header>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,confirm,approve,done"
+                           options="{'clickable': '0'}"/>
+                </header>
+
+
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="student_id"/>
+                            <field name="class_id"/>
+                        </group>
+                        <group>
+                            <field name="grade"/>
+                        </group>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="activity_ids"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="student_grade_tree_view" model="ir.ui.view">
+        <field name="name">student.grade</field>
+        <field name="model">school.grade</field>
+        <field name="arch" type="xml">
+            <tree string="student grade">
+
+                <field name="id"/>
+                <field name="student_id"/>
+                <field name="class_id"/>
+                <field name="grade"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="student_grade_search_view" model="ir.ui.view">
+        <field name="name">student.grade.search</field>
+        <field name="model">school.grade</field>
+        <field name="arch" type="xml">
+            <search string="Search">
+                <field name="id"/>
+                <field name="student_id"/>
+                <field name="class_id"/>
+                <field name="grade"/>
+                <!-- Default group by grade -->
+                <group expand="0" string="Grade">
+                    <filter name="group_by_grade" string="Grade" context="{'group_by': 'grade'}"/>
+                    <filter name="group_by_class" string="class" context="{'group_by': 'class_id'}"/>
+                    <filter name="group_by_student" string="student" context="{'group_by': 'student_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+
+</odoo>

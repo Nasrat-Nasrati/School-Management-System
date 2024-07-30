@@ -1,0 +1,661 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* SMS
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-23 05:08+0000\n"
+"PO-Revision-Date: 2024-07-23 05:08+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: SMS
+#: model_terms:ir.ui.view,arch_db:SMS.view_student_form
+#: model_terms:ir.ui.view,arch_db:SMS.view_teacher_form
+msgid ""
+"<i class=\"fa fa-whatsapp\"/>\n"
+"                        WhatsApp"
+msgstr "واتس اپ"
+
+#. module: SMS
+#: model:ir.model.fields.selection,name:SMS.selection__school_attendance__status__absent
+msgid "Absent"
+msgstr "غیرحاضر"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_class__message_needaction
+#: model:ir.model.fields,field_description:SMS.field_school_course__message_needaction
+#: model:ir.model.fields,field_description:SMS.field_school_student__message_needaction
+#: model:ir.model.fields,field_description:SMS.field_school_teacher__message_needaction
+msgid "Action Needed"
+msgstr "فعالیت ضرورت "
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_class__activity_ids
+#: model:ir.model.fields,field_description:SMS.field_school_course__activity_ids
+#: model:ir.model.fields,field_description:SMS.field_school_student__activity_ids
+#: model:ir.model.fields,field_description:SMS.field_school_teacher__activity_ids
+msgid "Activities"
+msgstr "فعالیتها"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_class__activity_exception_decoration
+#: model:ir.model.fields,field_description:SMS.field_school_course__activity_exception_decoration
+#: model:ir.model.fields,field_description:SMS.field_school_teacher__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "دکوراسیون استثنایی فعالیت"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_class__activity_state
+#: model:ir.model.fields,field_description:SMS.field_school_course__activity_state
+#: model:ir.model.fields,field_description:SMS.field_school_teacher__activity_state
+msgid "Activity State"
+msgstr "وضعیت فعالیت"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_class__activity_type_icon
+#: model:ir.model.fields,field_description:SMS.field_school_course__activity_type_icon
+#: model:ir.model.fields,field_description:SMS.field_school_teacher__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "شکل نوع فعالیت"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_student__address
+#: model:ir.model.fields,field_description:SMS.field_school_teacher__address
+msgid "Address"
+msgstr "آدرس"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_fees__amount
+msgid "Amount"
+msgstr "مقدار"
+
+#. module: SMS
+#: model:ir.model.fields.selection,name:SMS.selection__school_fees__month__april
+msgid "April"
+msgstr "اپریل"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_class__message_attachment_count
+#: model:ir.model.fields,field_description:SMS.field_school_course__message_attachment_count
+#: model:ir.model.fields,field_description:SMS.field_school_student__message_attachment_count
+#: model:ir.model.fields,field_description:SMS.field_school_teacher__message_attachment_count
+msgid "Attachment Count"
+msgstr "تعداد ضمیمه ها"
+
+#. module: SMS
+#: model:ir.model,name:SMS.model_school_attendance
+msgid "Attendance"
+msgstr "حاضری"
+
+#. module: SMS
+#: model:ir.model.fields.selection,name:SMS.selection__school_fees__month__august
+msgid "August"
+msgstr "اگوست"
+
+#. module: SMS
+#: model:ir.model,name:SMS.model_school_class
+#: model:ir.model.fields,field_description:SMS.field_school_attendance__class_id
+#: model:ir.model.fields,field_description:SMS.field_school_grade__class_id
+#: model_terms:ir.ui.view,arch_db:SMS.view_class_form
+#: model_terms:ir.ui.view,arch_db:SMS.view_class_tree
+msgid "Class"
+msgstr "صنف"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_class__class_code
+msgid "Class Code"
+msgstr "کود صنف"
+
+#. module: SMS
+#: model:ir.actions.act_window,name:SMS.action_class_info
+msgid "Classes"
+msgstr "صنف ها"
+
+#. module: SMS
+#: model:ir.ui.menu,name:SMS.sms_menu_class_info
+msgid "Classes Information"
+msgstr "معلومات صنف ها"
+
+#. module: SMS
+#: model:ir.ui.menu,name:SMS.sms_menu_setting
+msgid "Configuration"
+msgstr "تنظیمات"
+
+#. module: SMS
+#: model:ir.model,name:SMS.model_school_course
+#: model:ir.model.fields,field_description:SMS.field_school_class__course_id
+#: model:ir.model.fields,field_description:SMS.field_school_fees__course_id
+#: model_terms:ir.ui.view,arch_db:SMS.view_course_form
+#: model_terms:ir.ui.view,arch_db:SMS.view_course_tree
+msgid "Course"
+msgstr "کورس"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_course__course_code
+msgid "Course Code"
+msgstr "کود کورس"
+
+#. module: SMS
+#: model:ir.actions.act_window,name:SMS.action_course_info
+#: model:ir.model.fields,field_description:SMS.field_school_student__courses_ids
+#: model:ir.model.fields,field_description:SMS.field_school_teacher__course_ids
+#: model_terms:ir.ui.view,arch_db:SMS.view_student_form
+#: model_terms:ir.ui.view,arch_db:SMS.view_teacher_form
+msgid "Courses"
+msgstr "کورس ها"
+
+#. module: SMS
+#: model:ir.ui.menu,name:SMS.sms_menu_courses_info
+msgid "Courses Information"
+msgstr "معلومات کورس ها"
+
+#. module: SMS
+#: model_terms:ir.actions.act_window,help:SMS.action_class_info
+msgid "Create your first Class Record"
+msgstr "اولین رکورد صنف خود را ایجاد کنید"
+
+#. module: SMS
+#: model_terms:ir.actions.act_window,help:SMS.action_course_info
+msgid "Create your first Course Record"
+msgstr "اولین رکورد صنف خود را ایجاد کنید"
+
+#. module: SMS
+#: model_terms:ir.actions.act_window,help:SMS.action_teacher_info
+msgid "Create your first Teacher Record"
+msgstr "اولین رکورد معلم خود را ایجاد کنید"
+
+#. module: SMS
+#: model_terms:ir.actions.act_window,help:SMS.action_student_info
+msgid "Create your first student"
+msgstr "اولین رکورد شاگرد خود را ایجاد کنید"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_attendance__create_uid
+#: model:ir.model.fields,field_description:SMS.field_school_class__create_uid
+#: model:ir.model.fields,field_description:SMS.field_school_course__create_uid
+#: model:ir.model.fields,field_description:SMS.field_school_fees__create_uid
+#: model:ir.model.fields,field_description:SMS.field_school_grade__create_uid
+#: model:ir.model.fields,field_description:SMS.field_school_student__create_uid
+#: model:ir.model.fields,field_description:SMS.field_school_teacher__create_uid
+msgid "Created by"
+msgstr "ایجاد شده توسط"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_attendance__create_date
+#: model:ir.model.fields,field_description:SMS.field_school_class__create_date
+#: model:ir.model.fields,field_description:SMS.field_school_course__create_date
+#: model:ir.model.fields,field_description:SMS.field_school_fees__create_date
+#: model:ir.model.fields,field_description:SMS.field_school_grade__create_date
+#: model:ir.model.fields,field_description:SMS.field_school_student__create_date
+#: model:ir.model.fields,field_description:SMS.field_school_teacher__create_date
+msgid "Created on"
+msgstr "ایجاد شده در"
+
+#. module: SMS
+#: model:ir.actions.act_window,name:SMS.action_dashboard_info
+#: model:ir.ui.menu,name:SMS.sms_menu_Dashboard
+msgid "Dashboard"
+msgstr "دشبورد"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_attendance__date
+msgid "Date"
+msgstr "تاریخ"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_student__date_of_birth
+#: model_terms:ir.ui.view,arch_db:SMS.view_student_search
+msgid "Date of Birth"
+msgstr "تاریخ تولد"
+
+#. module: SMS
+#: model:ir.model.fields.selection,name:SMS.selection__school_fees__month__december
+msgid "December"
+msgstr "دیسمبر"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_course__description
+msgid "Description"
+msgstr "تشریحات"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_attendance__display_name
+#: model:ir.model.fields,field_description:SMS.field_school_class__display_name
+#: model:ir.model.fields,field_description:SMS.field_school_course__display_name
+#: model:ir.model.fields,field_description:SMS.field_school_fees__display_name
+#: model:ir.model.fields,field_description:SMS.field_school_grade__display_name
+#: model:ir.model.fields,field_description:SMS.field_school_student__display_name
+#: model:ir.model.fields,field_description:SMS.field_school_teacher__display_name
+msgid "Display Name"
+msgstr "نمایش نام"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_student__email
+#: model:ir.model.fields,field_description:SMS.field_school_teacher__email
+#: model_terms:ir.ui.view,arch_db:SMS.view_student_search
+msgid "Email"
+msgstr "ایمیل"
+
+#. module: SMS
+#: model:ir.model.fields.selection,name:SMS.selection__school_fees__month__february
+msgid "February"
+msgstr "فیبروری"
+
+#. module: SMS
+#: model:ir.model,name:SMS.model_school_fees
+#: model:ir.model.fields,field_description:SMS.field_school_course__fees_ids
+#: model:ir.model.fields,field_description:SMS.field_school_student__fees_ids
+#: model_terms:ir.ui.view,arch_db:SMS.view_course_form
+#: model_terms:ir.ui.view,arch_db:SMS.view_student_form
+msgid "Fees"
+msgstr "فیس"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_class__message_follower_ids
+#: model:ir.model.fields,field_description:SMS.field_school_course__message_follower_ids
+#: model:ir.model.fields,field_description:SMS.field_school_student__message_follower_ids
+#: model:ir.model.fields,field_description:SMS.field_school_teacher__message_follower_ids
+msgid "Followers"
+msgstr "تعقیب کننده ها"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_class__message_partner_ids
+#: model:ir.model.fields,field_description:SMS.field_school_course__message_partner_ids
+#: model:ir.model.fields,field_description:SMS.field_school_student__message_partner_ids
+#: model:ir.model.fields,field_description:SMS.field_school_teacher__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "تعقیب کننده ها"
+
+#. module: SMS
+#: model:ir.model.fields,help:SMS.field_school_class__activity_type_icon
+#: model:ir.model.fields,help:SMS.field_school_course__activity_type_icon
+#: model:ir.model.fields,help:SMS.field_school_teacher__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr "شکل فونت "
+
+#. module: SMS
+#: model:ir.model,name:SMS.model_school_grade
+#: model:ir.model.fields,field_description:SMS.field_school_grade__grade
+msgid "Grade"
+msgstr "نمره"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_class__has_message
+#: model:ir.model.fields,field_description:SMS.field_school_course__has_message
+#: model:ir.model.fields,field_description:SMS.field_school_student__has_message
+#: model:ir.model.fields,field_description:SMS.field_school_teacher__has_message
+msgid "Has Message"
+msgstr "پیام دارد"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_attendance__id
+#: model:ir.model.fields,field_description:SMS.field_school_class__id
+#: model:ir.model.fields,field_description:SMS.field_school_course__id
+#: model:ir.model.fields,field_description:SMS.field_school_fees__id
+#: model:ir.model.fields,field_description:SMS.field_school_grade__id
+#: model:ir.model.fields,field_description:SMS.field_school_student__id
+#: model:ir.model.fields,field_description:SMS.field_school_teacher__id
+msgid "ID"
+msgstr "آی دی"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_class__activity_exception_icon
+#: model:ir.model.fields,field_description:SMS.field_school_course__activity_exception_icon
+#: model:ir.model.fields,field_description:SMS.field_school_teacher__activity_exception_icon
+msgid "Icon"
+msgstr "شکل"
+
+#. module: SMS
+#: model:ir.model.fields,help:SMS.field_school_class__activity_exception_icon
+#: model:ir.model.fields,help:SMS.field_school_course__activity_exception_icon
+#: model:ir.model.fields,help:SMS.field_school_teacher__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr "شکل برای نشان دادن یک فعالیت استثنایی"
+
+#. module: SMS
+#: model:ir.model.fields,help:SMS.field_school_class__message_needaction
+#: model:ir.model.fields,help:SMS.field_school_course__message_needaction
+#: model:ir.model.fields,help:SMS.field_school_student__message_needaction
+#: model:ir.model.fields,help:SMS.field_school_teacher__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "اگر علامت زده شود، پیام‌های جدید به توجه شما نیاز دارند"
+
+#. module: SMS
+#: model:ir.model.fields,help:SMS.field_school_class__message_has_error
+#: model:ir.model.fields,help:SMS.field_school_class__message_has_sms_error
+#: model:ir.model.fields,help:SMS.field_school_course__message_has_error
+#: model:ir.model.fields,help:SMS.field_school_course__message_has_sms_error
+#: model:ir.model.fields,help:SMS.field_school_student__message_has_error
+#: model:ir.model.fields,help:SMS.field_school_student__message_has_sms_error
+#: model:ir.model.fields,help:SMS.field_school_teacher__message_has_error
+#: model:ir.model.fields,help:SMS.field_school_teacher__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr "اگر علامت زده شود، برخی از پیام ها دارای خطای تحویل هستند"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_class__message_is_follower
+#: model:ir.model.fields,field_description:SMS.field_school_course__message_is_follower
+#: model:ir.model.fields,field_description:SMS.field_school_student__message_is_follower
+#: model:ir.model.fields,field_description:SMS.field_school_teacher__message_is_follower
+msgid "Is Follower"
+msgstr "تعقیب کننده گان"
+
+#. module: SMS
+#: model:ir.model.fields.selection,name:SMS.selection__school_fees__month__january
+msgid "January"
+msgstr "جنوری"
+
+#. module: SMS
+#: model:ir.model.fields.selection,name:SMS.selection__school_fees__month__july
+msgid "July"
+msgstr "جولای"
+
+#. module: SMS
+#: model:ir.model.fields.selection,name:SMS.selection__school_fees__month__june
+msgid "June"
+msgstr "جون"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_attendance__write_uid
+#: model:ir.model.fields,field_description:SMS.field_school_class__write_uid
+#: model:ir.model.fields,field_description:SMS.field_school_course__write_uid
+#: model:ir.model.fields,field_description:SMS.field_school_fees__write_uid
+#: model:ir.model.fields,field_description:SMS.field_school_grade__write_uid
+#: model:ir.model.fields,field_description:SMS.field_school_student__write_uid
+#: model:ir.model.fields,field_description:SMS.field_school_teacher__write_uid
+msgid "Last Updated by"
+msgstr "آخرین اپدیت توسط"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_attendance__write_date
+#: model:ir.model.fields,field_description:SMS.field_school_class__write_date
+#: model:ir.model.fields,field_description:SMS.field_school_course__write_date
+#: model:ir.model.fields,field_description:SMS.field_school_fees__write_date
+#: model:ir.model.fields,field_description:SMS.field_school_grade__write_date
+#: model:ir.model.fields,field_description:SMS.field_school_student__write_date
+#: model:ir.model.fields,field_description:SMS.field_school_teacher__write_date
+msgid "Last Updated on"
+msgstr "آخرین اپدیت در"
+
+#. module: SMS
+#: model:ir.model.fields.selection,name:SMS.selection__school_fees__month__march
+msgid "March"
+msgstr "مارچ"
+
+#. module: SMS
+#: model:ir.model.fields.selection,name:SMS.selection__school_fees__month__may
+msgid "May"
+msgstr "می"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_class__message_has_error
+#: model:ir.model.fields,field_description:SMS.field_school_course__message_has_error
+#: model:ir.model.fields,field_description:SMS.field_school_student__message_has_error
+#: model:ir.model.fields,field_description:SMS.field_school_teacher__message_has_error
+msgid "Message Delivery error"
+msgstr "خطای تحویل پیام"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_class__message_ids
+#: model:ir.model.fields,field_description:SMS.field_school_course__message_ids
+#: model:ir.model.fields,field_description:SMS.field_school_student__message_ids
+#: model:ir.model.fields,field_description:SMS.field_school_teacher__message_ids
+msgid "Messages"
+msgstr "پیام"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_fees__month
+msgid "Month"
+msgstr "ماه"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_class__my_activity_date_deadline
+#: model:ir.model.fields,field_description:SMS.field_school_course__my_activity_date_deadline
+#: model:ir.model.fields,field_description:SMS.field_school_teacher__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr "مهلت فعالیت من"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_class__name
+#: model:ir.model.fields,field_description:SMS.field_school_course__name
+#: model:ir.model.fields,field_description:SMS.field_school_student__name
+#: model:ir.model.fields,field_description:SMS.field_school_teacher__name
+#: model_terms:ir.ui.view,arch_db:SMS.view_student_search
+msgid "Name"
+msgstr "اسم"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_class__activity_date_deadline
+#: model:ir.model.fields,field_description:SMS.field_school_course__activity_date_deadline
+#: model:ir.model.fields,field_description:SMS.field_school_teacher__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr "مهلت فعالیت بعدی"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_class__activity_summary
+#: model:ir.model.fields,field_description:SMS.field_school_course__activity_summary
+#: model:ir.model.fields,field_description:SMS.field_school_teacher__activity_summary
+msgid "Next Activity Summary"
+msgstr "خلاصه فعالیت بعدی"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_class__activity_type_id
+#: model:ir.model.fields,field_description:SMS.field_school_course__activity_type_id
+#: model:ir.model.fields,field_description:SMS.field_school_teacher__activity_type_id
+msgid "Next Activity Type"
+msgstr "نوع فعالیت بعدی"
+
+#. module: SMS
+#: model:ir.model.fields.selection,name:SMS.selection__school_fees__month__november
+msgid "November"
+msgstr "نوامبر"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_class__message_needaction_counter
+#: model:ir.model.fields,field_description:SMS.field_school_course__message_needaction_counter
+#: model:ir.model.fields,field_description:SMS.field_school_student__message_needaction_counter
+#: model:ir.model.fields,field_description:SMS.field_school_teacher__message_needaction_counter
+msgid "Number of Actions"
+msgstr "تعداد فعالیت ها"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_class__message_has_error_counter
+#: model:ir.model.fields,field_description:SMS.field_school_course__message_has_error_counter
+#: model:ir.model.fields,field_description:SMS.field_school_student__message_has_error_counter
+#: model:ir.model.fields,field_description:SMS.field_school_teacher__message_has_error_counter
+msgid "Number of errors"
+msgstr "تعداد خطاها"
+
+#. module: SMS
+#: model:ir.model.fields,help:SMS.field_school_class__message_needaction_counter
+#: model:ir.model.fields,help:SMS.field_school_course__message_needaction_counter
+#: model:ir.model.fields,help:SMS.field_school_student__message_needaction_counter
+#: model:ir.model.fields,help:SMS.field_school_teacher__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "تعداد پیام هایی که نیاز به اقدام دارند"
+
+#. module: SMS
+#: model:ir.model.fields,help:SMS.field_school_class__message_has_error_counter
+#: model:ir.model.fields,help:SMS.field_school_course__message_has_error_counter
+#: model:ir.model.fields,help:SMS.field_school_student__message_has_error_counter
+#: model:ir.model.fields,help:SMS.field_school_teacher__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "تعداد پیام های دارای خطای تحویل"
+
+#. module: SMS
+#: model:ir.model.fields.selection,name:SMS.selection__school_fees__month__october
+msgid "October"
+msgstr "اوکتوبر"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_fees__paid
+msgid "Paid"
+msgstr "پرداخت شده"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_student__phone
+#: model:ir.model.fields,field_description:SMS.field_school_teacher__phone
+#: model_terms:ir.ui.view,arch_db:SMS.view_student_search
+msgid "Phone"
+msgstr "نمبر تماس"
+
+#. module: SMS
+#: model:ir.model.fields.selection,name:SMS.selection__school_attendance__status__present
+msgid "Present"
+msgstr "حاضر"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_class__activity_user_id
+#: model:ir.model.fields,field_description:SMS.field_school_course__activity_user_id
+#: model:ir.model.fields,field_description:SMS.field_school_teacher__activity_user_id
+msgid "Responsible User"
+msgstr "استفاده کننده مسول"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_class__message_has_sms_error
+#: model:ir.model.fields,field_description:SMS.field_school_course__message_has_sms_error
+#: model:ir.model.fields,field_description:SMS.field_school_student__message_has_sms_error
+#: model:ir.model.fields,field_description:SMS.field_school_teacher__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "خطای تحویل پیامک"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_class__schedule
+msgid "Schedule"
+msgstr "برنامه"
+
+#. module: SMS
+#: model:ir.ui.menu,name:SMS.sms_menu_root
+msgid "School Management"
+msgstr "مدیریت مکتب"
+
+#. module: SMS
+#: model_terms:ir.ui.view,arch_db:SMS.view_class_search
+msgid "Search Classes"
+msgstr "جستجوی صنف ها"
+
+#. module: SMS
+#: model_terms:ir.ui.view,arch_db:SMS.view_course_search
+msgid "Search Courses"
+msgstr "جستجوی کورس"
+
+#. module: SMS
+#: model_terms:ir.ui.view,arch_db:SMS.view_student_search
+msgid "Search Students"
+msgstr "جستجوی شاگرد"
+
+#. module: SMS
+#: model_terms:ir.ui.view,arch_db:SMS.view_teacher_search
+msgid "Search Teachers"
+msgstr "جستجوی معلم"
+
+#. module: SMS
+#: model:ir.model.fields.selection,name:SMS.selection__school_fees__month__september
+msgid "September"
+msgstr "سیپتامبر"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_attendance__status
+msgid "Status"
+msgstr "وضعیت"
+
+#. module: SMS
+#: model:ir.model.fields,help:SMS.field_school_class__activity_state
+#: model:ir.model.fields,help:SMS.field_school_course__activity_state
+#: model:ir.model.fields,help:SMS.field_school_teacher__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: SMS
+#: model:ir.model,name:SMS.model_school_student
+#: model:ir.model.fields,field_description:SMS.field_school_attendance__student_id
+#: model:ir.model.fields,field_description:SMS.field_school_fees__student_id
+#: model:ir.model.fields,field_description:SMS.field_school_grade__student_id
+#: model_terms:ir.ui.view,arch_db:SMS.view_student_form
+#: model_terms:ir.ui.view,arch_db:SMS.view_student_tree
+msgid "Student"
+msgstr "شاگرد"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_student__student_id
+#: model_terms:ir.ui.view,arch_db:SMS.view_student_search
+msgid "Student ID"
+msgstr "آی دی شاگرد"
+
+#. module: SMS
+#: model:ir.ui.menu,name:SMS.sms_menu_students_info
+msgid "Student Information"
+msgstr "معلومات شاگرد"
+
+#. module: SMS
+#: model:ir.actions.act_window,name:SMS.action_student_info
+#: model:ir.model.fields,field_description:SMS.field_school_class__student_ids
+#: model:ir.model.fields,field_description:SMS.field_school_course__student_ids
+#: model:ir.ui.menu,name:SMS.sms_menu_students
+#: model_terms:ir.ui.view,arch_db:SMS.view_course_form
+msgid "Students"
+msgstr "شاگردان"
+
+#. module: SMS
+#: model:ir.model,name:SMS.model_school_teacher
+#: model:ir.model.fields,field_description:SMS.field_school_class__teacher_id
+#: model:ir.model.fields,field_description:SMS.field_school_course__teacher_id
+#: model_terms:ir.ui.view,arch_db:SMS.view_teacher_form
+#: model_terms:ir.ui.view,arch_db:SMS.view_teacher_tree
+msgid "Teacher"
+msgstr "معلم"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_teacher__teacher_id
+msgid "Teacher ID"
+msgstr "آی دی معلم"
+
+#. module: SMS
+#: model:ir.ui.menu,name:SMS.sms_menu_teacher_info
+msgid "Teacher Information"
+msgstr "معلومات معلم"
+
+#. module: SMS
+#: model:ir.actions.act_window,name:SMS.action_teacher_info
+#: model:ir.ui.menu,name:SMS.sms_menu_teachers
+msgid "Teachers"
+msgstr "معلم ها"
+
+#. module: SMS
+#: model:ir.model.fields,help:SMS.field_school_class__activity_exception_decoration
+#: model:ir.model.fields,help:SMS.field_school_course__activity_exception_decoration
+#: model:ir.model.fields,help:SMS.field_school_teacher__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr "نوع فعالیت استثنا در ثبت"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_class__website_message_ids
+#: model:ir.model.fields,field_description:SMS.field_school_course__website_message_ids
+#: model:ir.model.fields,field_description:SMS.field_school_student__website_message_ids
+#: model:ir.model.fields,field_description:SMS.field_school_teacher__website_message_ids
+msgid "Website Messages"
+msgstr "پیام های وب سایت"
+
+#. module: SMS
+#: model:ir.model.fields,help:SMS.field_school_class__website_message_ids
+#: model:ir.model.fields,help:SMS.field_school_course__website_message_ids
+#: model:ir.model.fields,help:SMS.field_school_student__website_message_ids
+#: model:ir.model.fields,help:SMS.field_school_teacher__website_message_ids
+msgid "Website communication history"
+msgstr "تاریخچه ارتباطات وب سایت"
+
+#. module: SMS
+#: model:ir.model.fields,field_description:SMS.field_school_fees__year
+msgid "Year"
+msgstr "سال"

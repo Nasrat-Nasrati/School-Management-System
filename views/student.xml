@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="view_student_form" model="ir.ui.view">
+        <field name="name">student.form</field>
+        <field name="model">school.student</field>
+        <field name="arch" type="xml">
+            <form string="Student">
+                <header>
+                <field name="state" widget="statusbar" statusbar_visible="draft,confirm,approve,done" options="{'clickable': '0'}" />
+            </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="student_id"/>
+                            <field name="date_of_birth"/>
+                        </group>
+
+                        <group>
+                            <field name="email"/>
+                            <field name="phone"/>
+                            <field name="address"/>
+                        </group>
+
+                    </group>
+                    <notebook>
+                        <page string="Courses">
+                            <field name="courses_ids" widget="many2many_tags"/>
+                        </page>
+                        <page string="Fees">
+                            <field name="fees_ids">
+                                <tree string="Fees">
+                                    <field name="amount"/>
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+
+                <!-- Chatter -->
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="many2many_channel"/>
+                    <field name="activity_ids" widget="mail_activity"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+                <!-- WhatsApp Link -->
+                <div class="oe_whatsapp_link">
+                    <a href="https://wa.me/93770694437" target="_blank" class="btn btn-primary">
+                        <i class="fa fa-whatsapp"/>
+                        WhatsApp
+                    </a>
+                </div>
+
+            </form>
+        </field>
+    </record>
+
+    <record id="view_student_tree" model="ir.ui.view">
+        <field name="name">student.tree</field>
+        <field name="model">school.student</field>
+        <field name="arch" type="xml">
+            <tree string="Student">
+                <field name="name"/>
+                <field name="student_id"/>
+                <field name="date_of_birth"/>
+                <field name="email"/>
+                <field name="phone"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <!-- Corrected search view definition -->
+    <record id="view_student_search" model="ir.ui.view">
+        <field name="name">student.search</field>
+        <field name="model">school.student</field>
+        <field name="arch" type="xml">
+            <search string="Search Students">
+                <!-- Search fields -->
+                <field name="name" string="Name"/>
+                <field name="student_id" string="Student ID"/>
+                <field name="date_of_birth" string="Date of Birth"/>
+                <field name="email" string="Email"/>
+                <field name="phone" string="Phone"/>
+            </search>
+        </field>
+    </record>
+
+
+</odoo>

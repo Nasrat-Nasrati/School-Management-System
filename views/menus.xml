@@ -1,0 +1,227 @@
+<odoo>
+    <!-- Define the action first -->
+    <record id="action_student_info" model="ir.actions.act_window">
+        <field name="name">Students</field>
+        <field name="res_model">school.student</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first student
+            </p>
+        </field>
+    </record>
+
+    <record id="action_teacher_info" model="ir.actions.act_window">
+        <field name="name">Teachers</field>
+        <field name="res_model">school.teacher</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first Teacher Record
+            </p>
+        </field>
+    </record>
+
+    <record id="action_class_info" model="ir.actions.act_window">
+        <field name="name">Classes</field>
+        <field name="res_model">school.class</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first Class Record
+            </p>
+        </field>
+    </record>
+
+    <record id="action_course_info" model="ir.actions.act_window">
+        <field name="name">Courses</field>
+        <field name="res_model">school.course</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first Course Record
+            </p>
+        </field>
+    </record>
+
+    <record id="action_student_grade" model="ir.actions.act_window">
+        <field name="name">Grade</field>
+        <field name="res_model">school.grade</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first student grade Record
+            </p>
+        </field>
+    </record>
+
+    <record id="action_student_attendance" model="ir.actions.act_window">
+        <field name="name">Attendance</field>
+        <field name="res_model">school.attendance</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first student Attendance Record
+            </p>
+        </field>
+    </record>
+
+    <record id="action_student_fess" model="ir.actions.act_window">
+        <field name="name">Student Fess</field>
+        <field name="res_model">school.fees</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create your first student Fess Record
+            </p>
+        </field>
+    </record>
+
+    <record id="action_dashboard_info" model="ir.actions.act_window">
+        <field name="name">Dashboard</field>
+        <field name="res_model">school.student</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- Root Menu -->
+    <menuitem
+            id="sms_menu_root"
+            name="School Management"
+            sequence="1"
+            web_icon="sms,static/description/icon.png"/>
+
+    <menuitem
+            id="sms_menu_Dashboard"
+            name="Dashboard"
+            parent="sms_menu_root"
+            sequence="-2"/>
+
+    <!-- STUDENTS MENU -->
+    <menuitem
+            id="sms_menu_students"
+            name="Students"
+            parent="sms_menu_root"
+            sequence="1"/>
+
+    <menuitem
+            id="sms_menu_students_info"
+            name="Student Information"
+            parent="sms_menu_students"
+            action="action_student_info"
+            sequence="1"/>
+
+    <menuitem
+            id="sms_menu_students_grade_info"
+            name="Student Grade"
+            parent="sms_menu_students"
+            action="action_student_grade"
+            sequence="2"/>
+
+    <menuitem
+            id="sms_menu_students_attendance"
+            name="Student Attendance"
+            parent="sms_menu_students"
+            action="action_student_attendance"
+            sequence="3"/>
+
+    <!-- TEACHERS MENU -->
+    <menuitem
+            id="sms_menu_teachers"
+            name="Teachers"
+            parent="sms_menu_root"
+            sequence="2"/>
+
+    <menuitem
+            id="sms_menu_teacher_info"
+            name="Teacher Information"
+            parent="sms_menu_teachers"
+            action="action_teacher_info"
+            sequence="1"/>
+
+    <!-- FINANCIAL MENU -->
+    <menuitem
+            id="sms_menu_finance"
+            name="Financial"
+            parent="sms_menu_root"
+            sequence="3"/>
+
+    <menuitem
+            id="sms_menu_student_fess"
+            name="Student Fess"
+            parent="sms_menu_finance"
+            action="action_student_fess"
+            sequence="1"/>
+
+    <menuitem
+            id="sms_menu_staff_salary"
+            name="Staff salary"
+            parent="sms_menu_finance"
+            action="action_student_fess"
+            sequence="2"/>
+
+    <menuitem
+            id="sms_menu_building_rent"
+            name="building Rent"
+            parent="sms_menu_finance"
+            action="action_student_fess"
+            sequence="3"/>
+
+    <menuitem
+            id="sms_menu_water_bills"
+            name="Water Bill"
+            parent="sms_menu_finance"
+            action="action_student_fess"
+            sequence="4"/>
+
+    <menuitem
+            id="sms_menu_internet_bills"
+            name="Internet Bill"
+            parent="sms_menu_finance"
+            action="action_student_fess"
+            sequence="5"/>
+
+    <menuitem
+            id="sms_menu_electricity_bills"
+            name="Electricity Bill"
+            parent="sms_menu_finance"
+            action="action_student_fess"
+            sequence="5"/>
+
+    <menuitem
+            id="sms_menu_transportation_fess"
+            name="Transportation Fess"
+            parent="sms_menu_finance"
+            action="action_student_fess"
+            sequence="6"/>
+
+    <menuitem
+            id="sms_menu_maintenance_fess"
+            name="Maintenance Fess"
+            parent="sms_menu_finance"
+            action="action_student_fess"
+            sequence="7"/>
+
+    <!-- CONFIGURATION MENU -->
+    <menuitem
+            id="sms_menu_setting"
+            name="Configuration"
+            parent="sms_menu_root"
+            sequence="4"/>
+
+    <menuitem
+            id="sms_menu_courses_info"
+            name="Courses Information"
+            parent="sms_menu_setting"
+            action="action_course_info"
+            sequence="1"/>
+
+    <menuitem
+            id="sms_menu_class_info"
+            name="Classes Information"
+            parent="sms_menu_setting"
+            action="action_class_info"
+            sequence="2"/>
+
+</odoo>
+
+

@@ -1,0 +1,74 @@
+<odoo>
+
+    <record id="student_fess_view_form" model="ir.ui.view">
+        <field name="name">student.fess.view.form</field>
+        <field name="model">school.fees</field>
+        <field name="arch" type="xml">
+            <form string="Student Fess">
+
+                <header>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,confirm,approve,done"
+                           options="{'clickable': '0'}"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="student_id"/>
+                            <field name="course_id"/>
+                            <field name="month"/>
+                        </group>
+
+                        <group>
+                            <field name="year"/>
+                            <field name="amount"/>
+                            <field name="paid"/>
+                        </group>
+                    </group>
+                </sheet>
+
+                <!-- Chatter -->
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" groups="base.group_user"/>
+                    <field name="message_ids"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="student_fess_tree_form" model="ir.ui.view">
+        <field name="name">student.fess.tree.form</field>
+        <field name="model">school.fees</field>
+        <field name="arch" type="xml">
+            <tree string="Student Fess">
+                <field name="student_id"/>
+                <field name="course_id"/>
+                <field name="month"/>
+                <field name="year"/>
+                <field name="amount"/>
+                <field name="paid"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="view_school_fees_search" model="ir.ui.view">
+        <field name="name">school.fees.search</field>
+        <field name="model">school.fees</field>
+        <field name="arch" type="xml">
+            <search string="Search Student Fees">
+                <field name="student_id"/>
+                <field name="course_id"/>
+                <field name="month"/>
+                <field name="paid"/>
+                <filter string="Paid" name="paid_true" domain="[('paid', '=', True)]"/>
+                <filter string="Not Paid" name="paid_false" domain="[('paid', '=', False)]"/>
+                <group expand="1" string="Group By">
+                    <filter string="Student" name="group_by_student" context="{'group_by':'student_id'}"/>
+                    <filter string="Course" name="group_by_course" context="{'group_by':'course_id'}"/>
+                    <filter string="Month" name="group_by_month" context="{'group_by':'month'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+</odoo>

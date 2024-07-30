@@ -1,0 +1,23 @@
+/* Add this to your CSS file or in a <style> tag */
+.oe_whatsapp_link {
+    margin-top: 10px; /* Add some spacing above the link */
+}
+
+.oe_whatsapp_link a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white; /* Text color */
+    background-color: #25D366; /* WhatsApp green color */
+    padding: 10px 15px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.oe_whatsapp_link i {
+    font-size: 20px; /* Icon size */
+    margin-right: 8px; /* Space between icon and text */
+}
+
+.oe_whatsapp_link span.sr-only {
+    display: none; /* Hide screen reader text visually */
+}

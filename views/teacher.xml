@@ -1,0 +1,89 @@
+<odoo>
+    <record id="view_teacher_form" model="ir.ui.view">
+        <field name="name">teacher.form</field>
+        <field name="model">school.teacher</field>
+        <field name="arch" type="xml">
+            <form string="Teacher">
+
+                <header>
+                <field name="state" widget="statusbar" statusbar_visible="draft,confirm,approve,done" options="{'clickable': '0'}" />
+            </header>
+
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="teacher_id"/>
+                            <field name="email"/>
+                        </group>
+                        <group>
+                            <field name="phone"/>
+                            <field name="address"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Courses">
+                            <field name="course_ids">
+                                <tree string="Courses">
+                                    <field name="name"/>
+
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+
+                <!-- Chatter -->
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="many2many_channel"/>
+                    <field name="activity_ids" widget="mail_activity"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+                <!-- WhatsApp Link -->
+                <div class="oe_whatsapp_link">
+                    <a href="https://wa.me/93770694437" target="_blank" class="btn btn-primary">
+                        <i class="fa fa-whatsapp"/>
+                        WhatsApp
+                    </a>
+                </div>
+
+
+            </form>
+        </field>
+    </record>
+
+    <odoo>
+        <record id="view_teacher_tree" model="ir.ui.view">
+            <field name="name">teacher.tree</field>
+            <field name="model">school.teacher</field>
+            <field name="arch" type="xml">
+                <tree string="Teacher">
+                    <field name="name"/>
+                    <field name="teacher_id"/>
+                    <field name="email"/>
+                    <field name="phone"/>
+                    <field name="address"/>
+                </tree>
+            </field>
+        </record>
+    </odoo>
+
+    <odoo>
+        <record id="view_teacher_search" model="ir.ui.view">
+            <field name="name">teacher.search</field>
+            <field name="model">school.teacher</field>
+            <field name="arch" type="xml">
+                <search string="Search Teachers">
+                    <field name="name"/>
+                    <field name="teacher_id"/>
+                    <field name="email"/>
+                    <field name="phone"/>
+                    <!-- Filters -->
+
+                </search>
+            </field>
+        </record>
+    </odoo>
+
+
+</odoo>

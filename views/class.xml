@@ -1,0 +1,75 @@
+<odoo>
+    <!-- Form View -->
+    <record id="view_class_form" model="ir.ui.view">
+        <field name="name">class.form</field>
+        <field name="model">school.class</field>
+        <field name="arch" type="xml">
+            <form string="Class">
+
+                <header>
+                <field name="state" widget="statusbar" statusbar_visible="draft,confirm,approve,done" options="{'clickable': '0'}" />
+            </header>
+
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="class_code"/>
+                        </group>
+                        <group>
+                            <field name="course_id"/>
+                            <field name="teacher_id"/>
+                        </group>
+                        <group>
+                            <field name="student_ids" widget="many2many_tags"/>
+                            <field name="schedule"/>
+                        </group>
+                    </group>
+                </sheet>
+
+                <!-- Chatter -->
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="many2many_channel"/>
+                    <field name="activity_ids" widget="mail_activity"/>
+                    <field name="message_ids" widget="mail_thread"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+
+    <!-- Tree View -->
+    <record id="view_class_tree" model="ir.ui.view">
+        <field name="name">class.tree</field>
+        <field name="model">school.class</field>
+        <field name="arch" type="xml">
+            <tree string="Class">
+                <field name="name"/>
+                <field name="class_code"/>
+                <field name="course_id"/>
+                <field name="teacher_id"/>
+            </tree>
+        </field>
+    </record>
+
+
+
+        <!-- Search View -->
+        <record id="view_class_search" model="ir.ui.view">
+            <field name="name">class.search</field>
+            <field name="model">school.class</field>
+            <field name="arch" type="xml">
+                <search string="Search Classes">
+                    <field name="name"/>
+                    <field name="class_code"/>
+                    <field name="course_id"/>
+                    <field name="teacher_id"/>
+                    <!-- Filters -->
+
+                </search>
+            </field>
+        </record>
+
+
+
+</odoo>
